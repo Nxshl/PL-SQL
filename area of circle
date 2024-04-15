@@ -1,0 +1,13 @@
+set serveroutput on
+
+
+declare
+	radius number(5);
+	result number(10,5);
+begin
+	radius := &radius;
+
+	result := 3.14 * radius * radius;
+	dbms_output.put_line('area of the circle is =' || result);
+end;
+/
